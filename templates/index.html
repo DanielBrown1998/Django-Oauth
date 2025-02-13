@@ -1,32 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
     <title>Django</title>
+    
 </head>
 <body>
     <header>
-        <img src="" alt="Uma pessoa feliz no computador" class="logo">
     </header>
     <main>
-        <h1>Autenticação</h1>
-        <section>
-            <div class="social-media">
-                <div class="social-media-details">
-                    <a href="">
-                        <img src="" alt="Icone para realizar a autenticação com o github" class="">
-                        <p>Github</p>
-                    </a>
-                </div>
+        <div class="social-media">
+            <img src="{% static "assets/image/logo.jpeg" %}" alt="Uma pessoa feliz no computador" class="logo">
+            <div class="social-media-details">
+                <h1>Autenticação</h1>
+                <img src="{% static "assets/image/github.svg" %}" alt="Icone para realizar a autenticação com o github" class="">
+                <a href="">
+                    <p>Github</p>
+                </a>
             </div>
-        </section>
-        <aside>
-
-        </aside>
+        </div>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
