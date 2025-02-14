@@ -72,6 +72,20 @@ p {
     margin-top: 5rem;
 }
 
+.social-media-details a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.social-media-details a:hover{
+    filter: drop-shadow(4px 5px 6px gray);
+}
+
+
 .social-media-details a p {
     color: var(--offwhite);
     font-size: 1.5rem;

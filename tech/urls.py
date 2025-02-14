@@ -5,5 +5,6 @@ app_name = 'tech'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('members/', views.members, name='members')
 ]
 
