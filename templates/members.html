@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Django</title>
     
 </head>
@@ -13,9 +13,15 @@
     </header>
     <main>
         <div class="social-media">
-            <img src="{% static "assets/image/member.jpeg" %}" alt="Pessoas felizes em um espaço público cercados de prédios com uma área arboreada ao fundo" class="logo">
-            <h1>Área de Membros</h1>
-            <p>Uma área de membros online exclusivo para pessoas registradas</p>            
+            <img src="{% static 'assets/image/member.jpeg' %}" alt="Pessoas felizes em um espaço público cercados de prédios com uma área arboreada ao fundo" class="logo">
+            <div class="social-media-details">
+                <h1>Área de Membros</h1>
+                <p>Uma área de membros online exclusivo para pessoas registradas</p>  
+                <div class="logout-btn-container">
+                    <a href="http://localhost:8000/accounts/logout" class="logout-btn">Logout</a>
+                </div>
+            </div>
+
         </div>
     </main>
 </body>
